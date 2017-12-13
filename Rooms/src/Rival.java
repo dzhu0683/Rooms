@@ -1,7 +1,7 @@
 
-public class Lake extends Room 
+public class Rival extends Room
 {
-	public Lake(int x, int y) 
+	public Rival(int x, int y) 
 	{
 		super(x, y);
 		// TODO Auto-generated constructor stub
@@ -13,6 +13,6 @@ public class Lake extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("You have entered a Lake.");
+		System.out.println("You found the winning room! Ten points for Gryffindor.");
 	}
 }

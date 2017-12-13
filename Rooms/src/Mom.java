@@ -1,7 +1,7 @@
 
-public class TallGrass extends Room 
+public class Mom extends Room
 {
-	public TallGrass(int x, int y) 
+	public Mom(int x, int y) 
 	{
 		super(x, y);
 		// TODO Auto-generated constructor stub
@@ -13,6 +13,6 @@ public class TallGrass extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("You have entered Tall Grass.");
+		System.out.println("You found the winning room! Ten points for Gryffindor.");
 	}
 }
