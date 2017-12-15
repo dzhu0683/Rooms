@@ -13,6 +13,7 @@ public class Rival extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("You found the winning room! Ten points for Gryffindor.");
+		System.out.println("You have reach your rival.");
+		Runner.gameOff();
 	}
 }
