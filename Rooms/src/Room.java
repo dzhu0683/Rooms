@@ -13,17 +13,17 @@ public class Room
 	public class board
 	{
 		private Room [][] rooms;
-		public Board (Rooms [][] rooms)
+		public board (Room [][] rooms)
 		{
-			this.rooms = rooms
+			this.rooms = rooms;
 		}
-		public Board(int size)
+		public board(int size)
 		{
-			this.rooms = new Rooms [size] [size];
+			this.rooms = new Room [size] [size];
 		}
 	}
 	
-	public printBoard()
+	public Room()
 	{
 		for(Room[] i : rooms)
 		{
@@ -45,6 +45,11 @@ public class Room
 	public void leaveRoom(Person x)
 	{
 		occupant = null;
+	}
+
+	public void print() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
