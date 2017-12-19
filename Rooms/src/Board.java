@@ -2,7 +2,7 @@ public class Board {
 
 
     private Room[][] townMap;
-
+ 
 
 
     public Board(Room[][] townMap)
