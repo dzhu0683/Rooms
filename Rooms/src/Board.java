@@ -12,17 +12,16 @@ public class Board {
 
     public void printMap()
     {
-
-
         for(Room[] row :townMap)
         {
             for (Room room : row)
             {
-                room.print();
+            	System.out.print("[----]");
             }
             System.out.println();
         }
     }
+    
     public Room[][] getTownMap() {
         return townMap;
     }
@@ -30,6 +29,4 @@ public class Board {
     public void setTownMap(Room[][] townMap) {
     	 this.townMap = townMap;
     }
-
-
 }
