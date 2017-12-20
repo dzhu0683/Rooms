@@ -12,15 +12,21 @@ public class Board {
 
     public void printMap()
     {
+      	
         for(Room[] row :townMap)
         {
+ 
             for (Room room : row)
             {
-            	System.out.print("[---]");
+            	if(room.occupant!=null)
+            		System.out.print("[ X ]");
+            	else
+            	System.out.print("[  ]");
             }
             System.out.println();
         }
-    }
+    	}
+ 
     
     public Room[][] getTownMap() {
         return townMap;
