@@ -22,7 +22,7 @@ public class Runner
 		//Create a random winning room.
 		int x = (int)(Math.random()*building.length);
 		int y = (int)(Math.random()*building.length);
-		building[x][y] = new Rival(x, y);
+		building[x][y] = new rivalRoom(x, y);
 		
 		Board game = new Board(building);
 		  
@@ -41,7 +41,7 @@ public class Runner
 				
 			}
 			else {
-				System.out.println("Please choose a valid move.");
+				System.out.println("You run into a wall.");
 			}
 		}
 		in.close();

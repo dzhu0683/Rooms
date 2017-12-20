@@ -1,7 +1,7 @@
 
-public class Chansey extends Room
+public class chanseyRoom extends Room
 {
-	public Chansey(int x, int y) 
+	public chanseyRoom(int x, int y) 
 	{
 		super(x, y);
 		// TODO Auto-generated constructor stub

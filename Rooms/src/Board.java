@@ -16,7 +16,7 @@ public class Board {
         {
             for (Room room : row)
             {
-            	System.out.print("[----]");
+            	System.out.print("[---]");
             }
             System.out.println();
         }
