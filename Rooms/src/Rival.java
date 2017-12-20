@@ -13,7 +13,7 @@ public class Rival extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("You have reach your rival.");
-		Runner.gameOff();
-	}
+		System.out.println("You are challenged by your rival to battle.");
+	}	
 }
+

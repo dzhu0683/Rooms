@@ -1,7 +1,7 @@
 
-public class Professor extends Room
+public class Chansey extends Room
 {
-	public Professor(int x, int y) 
+	public Chansey(int x, int y) 
 	{
 		super(x, y);
 		// TODO Auto-generated constructor stub
@@ -13,6 +13,6 @@ public class Professor extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("You found the winning room! Ten points for Gryffindor.");
+		System.out.println("You look a bit tired. Would you like to rest?");
 	}
 }

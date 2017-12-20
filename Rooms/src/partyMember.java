@@ -1,7 +1,7 @@
 
-public class Mom extends Room
+public class partyMember extends Room
 {
-	public Mom(int x, int y) 
+	public partyMember(int x, int y) 
 	{
 		super(x, y);
 		// TODO Auto-generated constructor stub
@@ -13,6 +13,7 @@ public class Mom extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("You talk to your mom.");
+		System.out.println("This Pokemon would like to join your party.");
+		Runner.gameOff();
 	}
 }
