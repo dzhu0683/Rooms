@@ -24,6 +24,10 @@ public class Runner
 		int y = (int)(Math.random()*building.length);
 		building[x][y] = new rivalRoom(x, y);
 		
+		int x1 = (int)(Math.random()*building.length);
+		int y2 = (int)(Math.random()*building.length);
+		building[x1][y2] = new chanseyRoom(x1, y);
+		
 		Board game = new Board(building);
 		  
 		 //Setup player 1 and the input scanner

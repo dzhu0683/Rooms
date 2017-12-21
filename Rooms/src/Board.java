@@ -21,7 +21,7 @@ public class Board {
             	if(room.occupant!=null)
             		System.out.print("[ X ]");
             	else
-            	System.out.print("[  ]");
+            	System.out.print("[   ]");
             }
             System.out.println();
         }
