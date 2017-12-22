@@ -6,7 +6,7 @@ public class rivalRoom extends Room
 		super(x, y);
 		// TODO Auto-generated constructor stub
 	}
-	ad
+
 	private static boolean rivalBattle = true;
 	
 	@Override
