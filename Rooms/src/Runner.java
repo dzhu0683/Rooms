@@ -25,8 +25,13 @@ public class Runner
 		building[x][y] = new rivalRoom(x, y);
 		
 		int x1 = (int)(Math.random()*building.length);
+		int y1 = (int)(Math.random()*building.length);
+		building[x1][y1] = new chanseyRoom(x1, y1);
+
+		int x2 = (int)(Math.random()*building.length);
 		int y2 = (int)(Math.random()*building.length);
-		building[x1][y2] = new chanseyRoom(x1, y);
+		building[x2][y2] = new kecleonRoom(x2, y2);
+
 		
 		Board game = new Board(building);
 		  
@@ -36,6 +41,7 @@ public class Runner
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
 		{
+			System.out.println("You begin your adventure as the pokemon Charizard");
 			game.printMap();
 			System.out.println("Where would you like to move? (Choose W, A, S, D)");
 			String move = in.nextLine();
@@ -111,7 +117,4 @@ public class Runner
 	{
 		gameOn = false;
 	}
-	
-
-
 }

@@ -7,7 +7,7 @@ public class rivalRoom extends Room
 		// TODO Auto-generated constructor stub
 	}
 
-	private static boolean rivalBattle = true;
+	private static boolean battle = true;
 	
 	@Override
 	public void enterRoom(Person x) 
@@ -19,7 +19,7 @@ public class rivalRoom extends Room
 		System.out.println("You discover your rival Shiftry doing something suspicious");
 		System.out.println("Before you can get a better look at what he's doing, Shiftry discovers you and attacks you!");
 		
-		while (rivalBattle)
+		while (battle)
 		{
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Shiftry is charging his Hyper Beam");
@@ -34,8 +34,21 @@ public class rivalRoom extends Room
 					System.out.println("Your rival Shiftry has fainted!");
 					System.out.println("You have fulfilled the request!");
 					System.out.println("You return to town triumphantly");
-					rivalBattle = false;
+					battle = false;
+					break;
+				case 2:
+					System.out.println("You use protect!");
+					if(Math.random() < 0.5)
+					{
+						System.out.println("Shiftry's attack does not damage");
+					}
+					else
+					{
+						System.out.println("But it failed");
+					}
+					break;
 			}
+			Runner.gameOff();
 		}
 		
 	}	
