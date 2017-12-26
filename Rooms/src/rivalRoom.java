@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class rivalRoom extends Room
 {
+	Runner cla = new Runner();
+	
 	public rivalRoom(int x, int y) 
 	{
 		super(x, y);
@@ -16,13 +18,21 @@ public class rivalRoom extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("You discover your rival Shiftry doing something suspicious");
-		System.out.println("Before you can get a better look at what he's doing, Shiftry discovers you and attacks you!");
+		if(cla.addLevel() < 5)
+		{
+			System.out.println("Your level is too low to challenge Shiftry");
+			battle = false;
+		}
+		else
+		{
+			System.out.println("You discover your rival Shiftry doing something suspicious");
+			System.out.println("Before you can get a better look at what he's doing, Shiftry discovers you and attacks you!");
+		}
 		
 		while (battle)
 		{
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Shiftry is charging his Hyper Beam");
+			System.out.println("Shiftry is about to use Rock Slide");
 			System.out.println("What do you do?");
 			System.out.println("1. Attack!   2. Block!");
 			System.out.println("3. Run!");
@@ -30,7 +40,7 @@ public class rivalRoom extends Room
 			switch (A) 
 			{
 				case 1:
-					System.out.println("You use Flamethrower!");
+					System.out.println("You use Flare Blitz!");
 					System.out.println("Your rival Shiftry has fainted!");
 					System.out.println("You have fulfilled the request!");
 					System.out.println("You return to town triumphantly");
@@ -40,13 +50,16 @@ public class rivalRoom extends Room
 					System.out.println("You use protect!");
 					if(Math.random() < 0.5)
 					{
-						System.out.println("Shiftry's attack does not damage");
+						System.out.println("Shiftry's attack does no damage");
 					}
 					else
 					{
 						System.out.println("But it failed");
+						System.out.println("");
 					}
 					break;
+				case 3:
+					System.out.println("You ran away.");
 			}
 			Runner.gameOff();
 		}

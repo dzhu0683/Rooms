@@ -6,8 +6,26 @@ public class Runner
 
 	private static boolean gameOn = true;
 	
+	private int level = 1;
+	private int health = 200;
+	
+	public int addLevel()
+	{
+		return level + 1;
+	}
+	
+	public int loseHealth()
+	{
+		return health - 50;
+	}
+	public int restoreHealth()
+	{
+		return health = 200;
+	}
+	
 	public static void main(String[] args)
 	{
+		System.out.println("You begin your adventure as the pokemon Charizard");
 		Room[][] building = new Room[5][5];
 		
 		//Fill the building with normal rooms
@@ -39,18 +57,18 @@ public class Runner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
 		building[0][0].enterRoom(player1);
 		Scanner in = new Scanner(System.in);
+		
 		while(gameOn)
 		{
-			System.out.println("You begin your adventure as the pokemon Charizard");
 			game.printMap();
 			System.out.println("Where would you like to move? (Choose W, A, S, D)");
 			String move = in.nextLine();
 			if(validMove(move, player1, building))
 			{
 				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc());
-				
 			}
-			else {
+			else 
+			{
 				System.out.println("You run into a wall.");
 			}
 		}
