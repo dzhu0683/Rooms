@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class chanseyRoom extends Room
 {
+	Runner cla = new Runner();
+	
 	public chanseyRoom(int x, int y) 
 	{
 		super(x, y);
@@ -27,6 +29,8 @@ public class chanseyRoom extends Room
 			{
 				case 1:
 					System.out.print("Chansey heals you to full health");
+					cla.restoreHealth();
+					
 				default:
 					break;
 			}
