@@ -19,13 +19,17 @@ public class Board {
             for (Room room : row)
             {
             	if(room.occupant!=null)
+            	{
             		System.out.print("[ X ]");
+            	}
             	else
+            	{
             	System.out.print("[   ]");
+            	}
             }
             System.out.println();
         }
-    	}
+    }
  
     
     public Room[][] getTownMap() {

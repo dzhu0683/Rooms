@@ -17,6 +17,7 @@ public class kecleonRoom extends Room
 		x.setyLoc(this.yLoc);
 		System.out.println("You encounter Kecleon");
 		System.out.println("Kecleon uses shadow claw");
+		System.out.println("");
 		System.out.println("but you use Focus Blast and it is super effective! ");
 		System.out.println("Kecleon Faints");
 		System.out.println("You leveled up!");

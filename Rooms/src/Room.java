@@ -1,8 +1,10 @@
 
 public class Room 
 {
+	
 	Person occupant;
 	int xLoc,yLoc;
+	Person chansey;
 	
 	public Room(int x, int y)
 	{

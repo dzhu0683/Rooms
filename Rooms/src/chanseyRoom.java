@@ -28,14 +28,17 @@ public class chanseyRoom extends Room
 			switch (A)
 			{
 				case 1:
-					System.out.print("Chansey heals you to full health");
+					System.out.println("Chansey heals you to full health");
 					cla.restoreHealth();
-					
 				default:
 					break;
 			}
 			break;
 		}
 		
+	}
+	public void printRoom()
+	{
+		System.out.print("[ C ]");
 	}
 }
