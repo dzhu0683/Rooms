@@ -6,22 +6,6 @@ public class Runner
 
 	private static boolean gameOn = true;
 	
-	private int level = 1;
-	private int health = 200;
-	
-	public int addLevel()
-	{
-		return level + 1;
-	}
-	
-	public int loseHealth()
-	{
-		return health - 50;
-	}
-	public int restoreHealth()
-	{
-		return health = 200;
-	}
 	
 	public static void main(String[] args)
 	{
@@ -66,6 +50,7 @@ public class Runner
 			if(validMove(move, player1, building))
 			{
 				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc());
+				System.out.println("Health: 200");
 			}
 			else 
 			{

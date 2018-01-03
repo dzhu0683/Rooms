@@ -3,6 +3,29 @@ public class Person {
 	String firstName;
 	String familyName;
 	int xLoc, yLoc;
+	private int health = 200;
+	private int level = 1;
+	public int getHealth() {
+		return health;
+	}
+
+	public void setHealth(int health) {
+		this.health = health;
+	}
+
+	public void loseHealth(int damage)
+	{
+		this.health = this.health - damage;
+	}
+	public void restoreHealth()
+	{
+		this.health = 200;
+	}
+	
+	public void addLevel()
+	{
+		this.level = this.level + 1;
+	}
 	
 	public int getxLoc() 
 	{
