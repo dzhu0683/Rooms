@@ -17,14 +17,21 @@ public class Person {
 	{
 		this.health = this.health - damage;
 	}
+	
 	public void restoreHealth()
 	{
 		this.health = 200;
 	}
 	
-	public void addLevel()
+	public int addLevel()
 	{
+		return this.level + 1;
+	}
+	public void newLevel() {
 		this.level = this.level + 1;
+	}
+	
+		
 	}
 	
 	public int getxLoc() 

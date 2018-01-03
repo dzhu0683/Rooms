@@ -18,7 +18,7 @@ public class rivalRoom extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		if(cla.addLevel() < 5)
+		if(occupant.addLevel() < 5)
 		{
 			System.out.println("Your level is too low to challenge Shiftry");
 			battle = false;
@@ -27,6 +27,7 @@ public class rivalRoom extends Room
 		{
 			System.out.println("You discover your rival Shiftry doing something suspicious");
 			System.out.println("Before you can get a better look at what he's doing, Shiftry discovers you and attacks you!");
+			battle = true;
 		}
 		
 		while (battle)

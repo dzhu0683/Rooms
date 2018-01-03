@@ -19,10 +19,12 @@ public class kecleonRoom extends Room
 		System.out.println("Kecleon uses shadow claw");
 		System.out.println("A Critical Hit!");
 		occupant.loseHealth(60);
+		occupant.getHealth();
 		System.out.println("You take damage!");
 		System.out.println("In your rage you punch Kecleon ");
 		System.out.println("Kecleon Faints");
 		System.out.println("You leveled up!");
-		System.out.println("You are level " + occupant.addLevel);
+		System.out.println("You are level " + occupant.addLevel());
+		occupant.newLevel();
 	}
 }

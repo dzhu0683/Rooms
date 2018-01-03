@@ -29,7 +29,7 @@ public class chanseyRoom extends Room
 			{
 				case 1:
 					System.out.println("Chansey heals you to full health");
-					cla.restoreHealth();
+					occupant.restoreHealth();
 				default:
 					break;
 			}

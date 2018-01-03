@@ -50,14 +50,24 @@ public class Runner
 			if(validMove(move, player1, building))
 			{
 				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc());
-				System.out.println("Health: 200");
+				System.out.println("Health: " + player1.getHealth());
 			}
 			else 
 			{
 				System.out.println("You run into a wall.");
 			}
+			
 		}
 		in.close();
+		
+		public boolean dead()
+		{
+			if (player1.getHealth() <= 0)
+			{
+				
+			}
+		
+		
 	}
 	
 	public static boolean validMove(String move, Person p, Room[][] map)
