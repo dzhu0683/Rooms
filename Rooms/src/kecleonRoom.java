@@ -25,6 +25,5 @@ public class kecleonRoom extends Room
 		System.out.println("Kecleon Faints");
 		System.out.println("You leveled up!");
 		System.out.println("You are level " + occupant.addLevel());
-		occupant.newLevel();
 	}
 }

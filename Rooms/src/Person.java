@@ -27,12 +27,6 @@ public class Person {
 	{
 		return this.level + 1;
 	}
-	public void newLevel() {
-		this.level = this.level + 1;
-	}
-	
-		
-	}
 	
 	public int getxLoc() 
 	{

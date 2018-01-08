@@ -60,14 +60,6 @@ public class Runner
 		}
 		in.close();
 		
-		public boolean dead()
-		{
-			if (player1.getHealth() <= 0)
-			{
-				
-			}
-		
-		
 	}
 	
 	public static boolean validMove(String move, Person p, Room[][] map)

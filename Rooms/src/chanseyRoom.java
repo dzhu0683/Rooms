@@ -22,6 +22,7 @@ public class chanseyRoom extends Room
 		while(heal)
 		{
 			Scanner sc = new Scanner(System.in);
+			System.out.println("You encountered Chansey.");
 			System.out.println("You are low on health, would you like to heal");
 			System.out.println("1. Yes   2. No");
 			int A = sc.nextInt();

@@ -61,6 +61,7 @@ public class rivalRoom extends Room
 					break;
 				case 3:
 					System.out.println("You ran away.");
+					break;
 			}
 			Runner.gameOff();
 		}
