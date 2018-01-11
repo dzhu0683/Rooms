@@ -51,6 +51,13 @@ public class Runner
 			{
 				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc());
 				System.out.println("Health: " + player1.getHealth());
+				System.out.println("Level: " + player1.getLevel());
+				if(player1.getHealth() <= 0)
+				{
+					System.out.println("You ran out of health and fainted.");
+					System.out.println("Returning you to the beginning");
+					Runner.main(null);
+				}
 			}
 			else 
 			{

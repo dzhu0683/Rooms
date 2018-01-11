@@ -18,7 +18,7 @@ public class rivalRoom extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		if(occupant.addLevel() < 5)
+		if(occupant.getLevel() < 5)
 		{
 			System.out.println("Your level is too low to challenge Shiftry");
 			battle = false;
