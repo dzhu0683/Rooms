@@ -20,20 +20,20 @@ public class rivalRoom extends Room
 		x.setyLoc(this.yLoc);
 		if(occupant.getLevel() < 5)
 		{
-			System.out.println("Your level is too low to challenge Shiftry");
+			System.out.println("Your level is too low to challenge Dragonite");
 			battle = false;
 		}
 		else
 		{
-			System.out.println("You discover your rival Shiftry doing something suspicious");
-			System.out.println("Before you can get a better look at what he's doing, Shiftry discovers you and attacks you!");
+			System.out.println("You discover your rival Dragonite doing something suspicious");
+			System.out.println("Before you can get a better look at what he's doing, Dragonite discovers you and attacks you!");
 			battle = true;
 		}
 		
 		while (battle)
 		{
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Shiftry is about to use Rock Slide");
+			System.out.println("Dragonite is about to use Rock Slide");
 			System.out.println("What do you do?");
 			System.out.println("1. Attack!   2. Block!");
 			System.out.println("3. Run!");
@@ -41,9 +41,9 @@ public class rivalRoom extends Room
 			switch (A) 
 			{
 				case 1:
-					System.out.println("You use Flare Blitz!");
-					System.out.println("Your rival Shiftry has fainted!");
-					System.out.println("You have fulfilled the request!");
+					System.out.println("You use Dragon Pulse!");
+					System.out.println("Your rival Dragonite has fainted!");
+					System.out.println("You have fulfilled the quest!");
 					System.out.println("You return to town triumphantly");
 					battle = false;
 					break;
