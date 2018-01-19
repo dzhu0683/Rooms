@@ -1,4 +1,11 @@
+package Board;
 import java.util.Scanner;
+
+import Rooms.Room;
+import Rooms.chanseyRoom;
+import Rooms.kecleonRoom;
+import Rooms.rivalRoom;
+import Rooms.toterraRoom;
 
 public class Runner 
 {

@@ -1,3 +1,6 @@
+package Rooms;
+import Board.Person;
+import Board.Runner;
 
 public class toterraRoom extends Room
 {
@@ -18,13 +21,16 @@ Runner cla = new Runner();
 		System.out.println("You encounter Toterra");
 		System.out.println("Torterra uses left Storm");
 		occupant.loseHealth(60);
-		System.out.println("You take damage!");
-		System.out.println("You use flamethrower!");
-		System.out.print("It's Super Effective!");
-		System.out.println("Toterra Faints");
-		System.out.println("You leveled up!");
-		occupant.addLevel();
-		System.out.println("You are level " + occupant.getLevel());
+		if(occupant.getHealth() > 0)
+		{
+			System.out.println("You take damage!");
+			System.out.println("You use flamethrower!");
+			System.out.print("It's Super Effective!");
+			System.out.println("Toterra Faints");
+			System.out.println("You leveled up!");
+			occupant.addLevel();
+			System.out.println("You are level " + occupant.getLevel());
+		}
 	}
 
 }

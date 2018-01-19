@@ -1,4 +1,8 @@
+package Rooms;
 import java.util.Scanner;
+
+import Board.Person;
+import Board.Runner;
 
 public class chanseyRoom extends Room
 {

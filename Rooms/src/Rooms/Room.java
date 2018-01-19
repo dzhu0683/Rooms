@@ -1,8 +1,10 @@
+package Rooms;
+import Board.Person;
 
 public class Room 
 {
 	
-	Person occupant;
+	public Person occupant;
 	int xLoc,yLoc;
 	Person chansey;
 	

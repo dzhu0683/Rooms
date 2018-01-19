@@ -1,3 +1,6 @@
+package Board;
+import Rooms.Room;
+
 public class Board {
 
 
