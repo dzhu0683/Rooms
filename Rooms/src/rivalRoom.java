@@ -56,7 +56,8 @@ public class rivalRoom extends Room
 					else
 					{
 						System.out.println("But it failed");
-						System.out.println("");
+						System.out.println("You take damage!");
+						occupant.loseHealth(60);
 					}
 					break;
 				case 3:

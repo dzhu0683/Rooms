@@ -33,6 +33,10 @@ public class Runner
 		int x2 = (int)(Math.random()*building.length);
 		int y2 = (int)(Math.random()*building.length);
 		building[x2][y2] = new kecleonRoom(x2, y2);
+		
+		int x3 = (int)(Math.random()*building.length);
+		int y3 = (int)(Math.random()*building.length);
+		building[x3][y3] = new toterraRoom(x3, y3);
 
 		
 		Board game = new Board(building);
