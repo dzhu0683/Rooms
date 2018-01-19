@@ -2,11 +2,11 @@ package Rooms;
 import Board.Person;
 import Board.Runner;
 
-public class toterraRoom extends Room
+public class blastoiseRoom extends Room
 {
 	Runner cla = new Runner();
 	
-	public toterraRoom(int x, int y) 
+	public blastoiseRoom(int x, int y) 
 	{
 		super(x, y);
 		// TODO Auto-generated constructor stub

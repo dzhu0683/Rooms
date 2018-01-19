@@ -44,7 +44,7 @@ public class Runner
 		int x3 = (int)(Math.random()*building.length);
 		int y3 = (int)(Math.random()*building.length);
 		building[x3][y3] = new toterraRoom(x3, y3);
-
+		
 		
 		Board game = new Board(building);
 		  
